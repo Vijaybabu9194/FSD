@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fertile Minds</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home" id="homeBtn" class="nav-button">Home</a></li>
+        <li><a href="#about" id="aboutBtn" class="nav-button">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="background-section">
+    <div class="overlay">
+      <h1>Welcome to Fertile Minds</h1>
+      <p>Empowering farmers with knowledge and sustainable practices</p>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="feature-box" onclick="location.href='frontend/fertilizer.html'">
+      <img src="Images/Fertilizer2.jpeg" alt="Fertilizer" class="feature-img">
+      <div class="feature-text">
+        <span>Fertilizer<br>Recommendation<br>System</span>
+      </div>
+    </div>
+  
+    <div class="feature-box" onclick="location.href='frontend/water-conservation.html'">
+      <img src="Images/WaterConservation.jpeg" alt="Water" class="feature-img">
+      <div class="feature-text">
+        <span>Water<br>Conservation<br>Techniques</span>
+      </div>
+    </div>
+  
+    <div class="feature-box" onclick="location.href='frontend/soil-conservation.html'">
+      <img src="Images/SoilConservation.jpeg" alt="Soil" class="feature-img">
+      <div class="feature-text">
+        <span>Soil<br>Conservation<br>Techniques</span>
+      </div>
+    </div>
+  
+    <div class="feature-box" onclick="location.href='frontend/organic.html'">
+      <img src="Images/OrganicFertilizer.jpeg" alt="Organic" class="feature-img">
+      <div class="feature-text">
+        <span>Organic<br>Fertilizers</span>
+      </div>
+    </div>
+  </section>
+
+      <!-- Profile cards here -->
+      <section id="about" class="profile-section">
+        <h2 align="center">Our Team</h2>
+        <div class="profile-container">
+          <!-- Profile 1 -->
+          <div class="profile-card">
+            <div class="profile-header"></div>
+            <img src="Images/Vijay.jpeg" alt="A. Vijay Babu" class="profile-img" />
+            <div class="profile-content">
+              <h3>A.Vijay Babu</h3>
+              <p class="role">Front-end Developer</p>
+              <p class="desc">Passionate about building engaging user experiences.</p>
+              <a href="#" class="btn">View Profile</a>
+            </div>
+          </div>
+    
+          <!-- Profile 2 -->
+          <div class="profile-card">
+            <div class="profile-header"></div>
+            <img src="Images/Bharath.jpeg" alt="A. Bharath" class="profile-img" />
+            <div class="profile-content">
+              <h3>A.Bharath</h3>
+              <p class="role">Back-end Developer</p>
+              <p class="desc">Focused on optimizing server-side solutions and databases.</p>
+              <a href="#" class="btn">View Profile</a>
+            </div>
+          </div>
+    
+          <!-- Profile 3 -->
+          <div class="profile-card">
+            <div class="profile-header"></div>
+            <img src="Images/Venkat.jpeg" alt="B. Venkatesh" class="profile-img" />
+            <div class="profile-content">
+              <h3>B.Venkatesh</h3>
+              <p class="role">Project Manager</p>
+              <p class="desc">Expert in leading cross-functional teams to success.</p>
+              <a href="#" class="btn">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- Chatbot Toggle Button -->
+<div class="chatbot-toggle" id="chatbotToggle">
+  <img src="Images/Farmer.jpeg" alt="Chat" />
+</div>
+
+<!-- Chatbot Section -->
+<div id="chatbot" class="chatbot-container hidden">
+  <div class="chatbot-header">
+    <img src="Images/Farmer.jpeg" alt="Avatar" class="avatar" />
+    <div class="chatbot-info">
+      <strong>Fertile Minds</strong>
+      <span>We typically reply in a few minutes</span>
+    </div>
+    <button class="close-btn" id="closeChat">×</button>
+  </div>
+  <div class="chatbot-messages" id="chatMessages">
+    <div class="message bot">Hello and welcome to Fertile Minds!<br>How can we help you today?</div>
+  </div>
+  <div class="chat-input">
+    <textarea id="userInput" placeholder="Ask me anything..." rows="1"></textarea>
+    <button id="sendBtn" title="Send message">
+      <i class="fa-solid fa-paper-plane"></i>
+    </button>
+  </div>
+  
+</div>
+
+  <!-- Load the JS at the end of the body -->
+  <script src="frontend/script.js"></script>
+</body>
+</html>

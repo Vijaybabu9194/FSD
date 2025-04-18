@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fertilizer Recommendation</title>
+  <link rel="stylesheet" href="fertilizer.css" />
+</head>
+<body>
+  <a href="../index.html" class="home-button">Home</a>
+
+  <section class="fertilizer-section">
+    <div class="form-container">
+      <h2>Fertilizer Recommendation System</h2>
+      <form id="fertilizerForm">
+        <div class="form-group">
+          <label for="crop">Crop Type</label>
+          <select id="crop" name="crop" required>
+            <option value="" disabled selected>Select crop</option>
+            <option value="wheat">Wheat</option>
+            <option value="rice">Rice</option>
+            <option value="maize">Maize</option>
+            <option value="sugarcane">Sugarcane</option>
+            <option value="cotton">Cotton</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="soil">Soil Type</label>
+          <select id="soil" name="soil" required>
+            <option value="" disabled selected>Select soil type</option>
+            <option value="sandy">Sandy</option>
+            <option value="clay">Clay</option>
+            <option value="loamy">Loamy</option>
+            <option value="peaty">Peaty</option>
+            <option value="chalky">Chalky</option>
+            <option value="silty">Silty</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="season">Season</label>
+          <select id="season" name="season" required>
+            <option value="" disabled selected>Select season</option>
+            <option value="rabi">Rabi</option>
+            <option value="kharif">Kharif</option>
+            <option value="zaid">Zaid</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ph">Soil pH Level</label>
+          <input type="number" step="0.1" id="ph" name="ph" placeholder="e.g. 6.5" required>
+        </div>
+
+        <div class="form-group">
+          <label for="water">Water Availability (in mm)</label>
+          <input type="number" id="water" name="water" placeholder="e.g. 150" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Get Recommendation</button>
+      </form>
+
+      <div id="result" class="result-box" style="display:none;">
+        <h3>Recommended Fertilizer</h3>
+        <p id="fertilizerType"></p>
+        <p id="fertilizerQty"></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="fertilizer.js"></script>
+</body>
+</html>

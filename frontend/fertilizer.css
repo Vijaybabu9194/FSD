@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('../Images/Fertilizerbackground.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fertilizer-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .form-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2f855a;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 12px 14px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: #fff;
+  }
+  
+  select {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%22292%22%20height%3D%22292%22%20viewBox%3D%220%200%20292%20292%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2069.4l-14.3-14.3c-4.7-4.7-12.3-4.7-17%200L146%20165.7%2036.3%2055.1c-4.7-4.7-12.3-4.7-17%200L5%2069.4c-4.7%204.7-4.7%2012.3%200%2017l133.6%20133.6c4.7%204.7%2012.3%204.7%2017%200L287%2086.4c4.7-4.7%204.7-12.3%200-17z%22/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 16px 16px;
+  }
+  
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #38a169;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2f855a;
+  }
+  
+  .result-box {
+    margin-top: 30px;
+    background-color: #f0fff4;
+    padding: 20px;
+    border: 1px solid #c6f6d5;
+    border-radius: 10px;
+    color: #2f855a;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .home-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #38a169;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .home-button:hover {
+    background-color: #2f855a;
+  }
+  
